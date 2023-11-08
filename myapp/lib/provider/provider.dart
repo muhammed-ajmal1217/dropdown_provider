@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+// drpdownButton provider----------------------------------
 class DropdownProvider extends ChangeNotifier{
 String dropdownValue='Ajmal';
   var items=[
@@ -13,6 +13,7 @@ String dropdownValue='Ajmal';
     notifyListeners();
   }
 }
+//circlAvatar provider-------------------------------------
 class CircleAvatarProvider extends ChangeNotifier{
   Color color=Colors.black;
   changeColorGreen(){
@@ -21,6 +22,15 @@ class CircleAvatarProvider extends ChangeNotifier{
   }
   changeColorRed(){
     color=Colors.red;
+    notifyListeners();
+  }
+}
+
+class TextProvider extends ChangeNotifier{
+  TextEditingController controller=TextEditingController();
+  String name='';
+  addtext(){
+    name=controller.text;
     notifyListeners();
   }
 }

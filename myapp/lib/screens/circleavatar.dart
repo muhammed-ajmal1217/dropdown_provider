@@ -2,14 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:myapp/provider/provider.dart';
 import 'package:provider/provider.dart';
 
-class CircleAvatarPage extends StatefulWidget {
+class CircleAvatarPage extends StatelessWidget {
   const CircleAvatarPage({super.key});
 
-  @override
-  State<CircleAvatarPage> createState() => _CircleAvatarPageState();
-}
-
-class _CircleAvatarPageState extends State<CircleAvatarPage> {
   @override
   Widget build(BuildContext context) {
     final pro = Provider.of<CircleAvatarProvider>(context, listen: true);

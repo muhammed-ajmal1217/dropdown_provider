@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myapp/provider/provider.dart';
 import 'package:myapp/screens/circleavatar.dart';
 import 'package:myapp/screens/dropdown.dart';
+import 'package:myapp/screens/textadding.dart';
 import 'package:provider/provider.dart';
 
 void main() { 
@@ -16,10 +17,11 @@ Widget build(BuildContext context) {
     providers: [
       ChangeNotifierProvider(create: (context) => DropdownProvider(),),
       ChangeNotifierProvider(create: (context) => CircleAvatarProvider(),),
+      ChangeNotifierProvider(create: (context) => TextProvider(),),
     ],
       child: const MaterialApp(  
         //change the home: to see the other method results------------
-      home: CircleAvatarPage(), 
+      home: TextAdding(), 
       debugShowCheckedModeBanner: false, 
       ),
     ); 
